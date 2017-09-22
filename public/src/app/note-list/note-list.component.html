@@ -1,0 +1,4 @@
+<section *ngFor ='let note of notes'>
+   <p class = "note">{{ note.note }}</p>
+   <p class = "date">{{ note.created_at | date }}</p>
+</section>

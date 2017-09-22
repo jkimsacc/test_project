@@ -1,0 +1,11 @@
+section {
+   display: grid;
+   grid-template-columns: repeat( 10, 1fr);
+   grid-gap: 0
+}
+h3.note{
+   grid-column: 1 / 10;
+}
+p.date{
+   grid-column: 10;
+}

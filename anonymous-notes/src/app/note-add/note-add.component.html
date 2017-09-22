@@ -1,0 +1,6 @@
+<h1>Anonymous Notes</h1>
+<form (submit)="addNote()">
+   <textarea name="note" rows="8" cols="150"
+   [(ngModel)]="newNote.note" #note='ngModel' minlength = "4" maxlength = "250" required></textarea>
+   <input [disabled]= "note.invalid" type="submit" name="submit" value="post">
+</form>
